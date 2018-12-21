@@ -17,7 +17,4 @@
 * [八、React-router初识](react-jiao-cheng/ba-reactrouter-chu-shi.md)
 * [九、项目中的问题记录](react-jiao-cheng/jiu-xiang-mu-zhong-de-wen-ti-ji-lu.md)
 * [十、redux简介&使用](react-jiao-cheng/shi-redux-jian-jie-shi-yong.md)
-* [二、JSX介绍](react-jiao-cheng/er-jsx-jie-shao-1.md)
-* [三、React渲染](react-jiao-cheng/san-react-ran-1.md)
-* [四、组件Components](react-jiao-cheng/si-zu-jian-components-1.md)
 
