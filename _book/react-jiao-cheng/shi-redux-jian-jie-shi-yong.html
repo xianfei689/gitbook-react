@@ -1,0 +1,757 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>十、redux简介&使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="redux简介&使用">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    umiJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../dvajs.html">
+            
+                <a href="../dvajs.html">
+            
+                    
+                    DvaJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dva-tu-jie.html">
+            
+                <a href="../dva-tu-jie.html">
+            
+                    
+                    Dva 图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../cong-react-jiao-du-lai-fen-xi-dva.html">
+            
+                <a href="../cong-react-jiao-du-lai-fen-xi-dva.html">
+            
+                    
+                    从react角度来分析Dva
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">react教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="yi-an-zhuang-yu-shi-yong.html">
+            
+                <a href="yi-an-zhuang-yu-shi-yong.html">
+            
+                    
+                    一、安装与使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="er-jsx-jie-shao.html">
+            
+                <a href="er-jsx-jie-shao.html">
+            
+                    
+                    二、JSX介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="san-react-ran.html">
+            
+                <a href="san-react-ran.html">
+            
+                    
+                    三、React渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="si-zu-jian-components.html">
+            
+                <a href="si-zu-jian-components.html">
+            
+                    
+                    四、组件Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="wu-props-shu-xing-he-state-zhuang-tai.html">
+            
+                <a href="wu-props-shu-xing-he-state-zhuang-tai.html">
+            
+                    
+                    五、Props（属性）和State（状态）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="liu-react-sheng-ming-zhou-qi.html">
+            
+                <a href="liu-react-sheng-ming-zhou-qi.html">
+            
+                    
+                    六、React生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="qi-react-zu-jian-ying-yong-chang-jing.html">
+            
+                <a href="qi-react-zu-jian-ying-yong-chang-jing.html">
+            
+                    
+                    七、React组件应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="ba-reactrouter-chu-shi.html">
+            
+                <a href="ba-reactrouter-chu-shi.html">
+            
+                    
+                    八、React-router初识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html">
+            
+                <a href="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html">
+            
+                    
+                    九、项目中的问题记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.10" data-path="shi-redux-jian-jie-shi-yong.html">
+            
+                <a href="shi-redux-jian-jie-shi-yong.html">
+            
+                    
+                    十、redux简介&使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >十、redux简介&使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5341;&#x3001;redux&#x7B80;&#x4ECB;&#x4F7F;&#x7528;">&#x5341;&#x3001;redux&#x7B80;&#x4ECB;&amp;&#x4F7F;&#x7528;</h1>
+<h3 id="&#x4E00;&#x3001;redux&#x7B80;&#x4ECB;">&#x4E00;&#x3001;Redux&#x7B80;&#x4ECB;</h3>
+<blockquote>
+<p>React &#x53EA;&#x662F; DOM &#x7684;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x5C42;&#xFF0C;&#x5E76;&#x4E0D;&#x662F; Web &#x5E94;&#x7528;&#x7684;&#x5B8C;&#x6574;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x9762;&#xFF0C;&#x5B83;&#x6CA1;&#x6D89;&#x53CA;&#xFF1A;<em>&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x3001;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x901A;&#x4FE1;</em>&#x3002; &#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;2014&#x5E74; Facebook &#x63D0;&#x51FA;&#x4E86; Flux &#x67B6;&#x6784;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5F15;&#x53D1;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x5B9E;&#x73B0;&#x3002;2015&#x5E74;&#xFF0C;Redux &#x51FA;&#x73B0;&#xFF0C;&#x5C06; Flux &#x4E0E;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7ED3;&#x5408;&#x4E00;&#x8D77;&#xFF0C;&#x5F88;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x5C31;&#x6210;&#x4E3A;&#x4E86;&#x6700;&#x70ED;&#x95E8;&#x7684;&#x524D;&#x7AEF;&#x67B6;&#x6784;&#x3002;</p>
+<p>Redux&#xFF1A;&#x7B80;&#x8A00;&#x4E4B;&#xFF0C;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x673A;&#x3002;&#x5C31;&#x50CF;vue&#x7684;vuex&#x4E00;&#x6837;&#xFF0C;&#x8D1F;&#x8D23;&#x9879;&#x76EE;&#x7684;&#x5355;&#x72EC;&#x7684;state&#x72B6;&#x6001;&#x7BA1;&#x7406;&#xFF0C;&#x901A;&#x8FC7;redux&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x5168;&#x5C40;&#x7684;&#x72B6;&#x6001;&#x7BA1;&#x7406;&#xFF0C;&#x6240;&#x6709;&#x7684;state&#x90FD;&#x5728;&#x4E00;&#x4E2A;store&#x5BF9;&#x8C61;&#x4E2D;&#x4FDD;&#x5B58;&#x3002;&#x5F53;&#x7136;&#xFF0C;redux&#x5E76;&#x4E0D;&#x662F;react&#x7684;&#x6807;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x9879;&#x76EE;&#x7B80;&#x5355;&#xFF0C;&#x4EA4;&#x4E92;&#x5E76;&#x4E0D;&#x8D1F;&#x6742;&#xFF0C;&#x7EC4;&#x4EF6;&#x95F4;&#x901A;&#x4FE1;&#x4E0D;&#x9891;&#x7E41;&#xFF0C;&#x4E0D;&#x7528;websocket&#x7B49;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;redux&#x3002;</p>
+<p>Redux&#x7684;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF1A;</p>
+</blockquote>
+<ol>
+<li>Web&#x5E94;&#x7528;&#x662F;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x673A;&#xFF0C;&#x89C6;&#x56FE;&#x4E0E;&#x72B6;&#x6001;&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x3002;</li>
+<li>&#x6240;&#x6709;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x91CC;&#x9762;&#x3002;</li>
+</ol>
+<h3 id="&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x4E8C;&#x3001;&#x57FA;&#x672C;&#x4F7F;&#x7528;</h3>
+<blockquote>
+<p>redux&#x4F7F;&#x7528;&#x6700;&#x9891;&#x7E41;&#x7684;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A; <code>store.getState()</code>,<code>store.dispatch({type:&apos;xx&apos;})</code>,<code>store.subscribe(fn)</code></p>
+<p>&#x4F7F;&#x7528;redux&#x7684;&#x57FA;&#x672C;&#x6B65;&#x9AA4;&#xFF1A;</p>
+</blockquote>
+<ol>
+<li><strong>&#x5F15;&#x5165;</strong>&#xFF1A;</li>
+</ol>
+<pre><code class="lang-text">import {createStore} from &apos;redux&apos;
+</code></pre>
+<ol>
+<li><strong>&#x521B;&#x5EFA;reducer</strong></li>
+</ol>
+<pre><code class="lang-text">// action.type&#x662F;&#x5FC5;&#x987B;&#x5C5E;&#x6027;
+function counter(state=0,action){
+     switch (action.type) {
+      case &apos;INCREMENT&apos;:
+        return state + 1;
+      case &apos;DECREMENT&apos;:
+        return state - 1;
+      default:
+        return state;
+      }
+}
+let store = createSotre(counter);
+export default store;
+</code></pre>
+<ol>
+<li><strong>&#x7EC4;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;store&#x7684;&#x72B6;&#x6001;</strong></li>
+</ol>
+<pre><code class="lang-text">import store from &apos;reducer/store.js&apos;;
+
+# &#x4F2A;&#x4EE3;&#x7801;
+render(){
+    return(&lt;div&gt;
+        state:{store.getState()}
+        &lt;button onClick={()=&gt;store.dispatch({type:&apos;INCREMENT&apos;})}&gt;&#x52A0;&#x4E00;&lt;/button&gt;
+        &lt;button onClick={()=&gt;store.dispatch({type:&apos;DECREMENT&apos;})}&gt;&#x51CF;&#x4E00;&lt;/button&gt;
+    &lt;/div&gt;)
+}
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x4E0A;dispatch&#x4F20;&#x5165;&#x53C2;&#x6570;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4E2D;type&#x4E3A;&#x5FC5;&#x987B;&#x5C5E;&#x6027;<br>store.dispatch()&#x89E6;&#x53D1;state&#x6539;&#x53D8;<br>store.getState()&#x83B7;&#x53D6;state</p>
+</blockquote>
+<ol>
+<li><strong>&#x76D1;&#x542C;state&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x81EA;&#x52A8;&#x5237;&#x65B0;view&#x5C42;</strong></li>
+</ol>
+<pre><code class="lang-text"># index.js
+const render = ()=&gt;ReactDOM.render(&lt;App /&gt;, document.getElementById(&apos;root&apos;));
+render();
+store.subscribe(render);
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x4E0A;&#xFF1A;<code>store.subscribe(fn)</code>&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x76D1;&#x542C;state&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x5F53;dispatch&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;fn&#x3002;<br>&#x901A;&#x8FC7;&#x5C06;&#x539F;&#x6765;&#x7684; ReactDOM.render&#x8FDB;&#x884C;&#x51FD;&#x6570;&#x5305;&#x88C5;&#xFF0C;&#x4F20;&#x5165;subscribe&#x5B9E;&#x73B0;&#x76D1;&#x542C;&#x3002;<br><code>store.subscribe(fn)</code>&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x6E05;&#x9664;&#x76D1;&#x542C;&#x3002;</p>
+</blockquote>
+<ol>
+<li><strong>&#x89E6;&#x53D1;state&#x53D8;&#x5316;</strong></li>
+</ol>
+<pre><code class="lang-text">store.dispatch({type:&apos;INCREMENT&apos;})
+</code></pre>
+<h3 id="&#x4E8C;-&#x3001;redux&#x6838;&#x5FC3;">&#x4E8C; &#x3001;Redux&#x6838;&#x5FC3;</h3>
+<blockquote>
+<p>Redux&#x7684;&#x4F7F;&#x7528;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6838;&#x5FC3;&#x6982;&#x5FF5;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li><code>Action</code>&#xFF1A; view&#x5C42;&#x89E6;&#x53D1;model&#x6539;&#x53D8;&#x7684;&#x65B9;&#x6CD5;</li>
+<li><code>Reducer</code>&#xFF1A;&#x6539;&#x53D8;state&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;</li>
+<li><code>Store</code>&#xFF1A;&#x5B58;&#x50A8;State&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x64CD;&#x4F5C;state&#x7684;&#x65B9;&#x6CD5;</li>
+</ul>
+<h2 id="101-&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x548C;api">10.1 &#x57FA;&#x672C;&#x6982;&#x5FF5;&#x548C;API</h2>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684; redux&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x76EE;&#x5F55;&#x5982;&#x4E0B;&#xFF1A;</p>
+</blockquote>
+<pre><code class="lang-text">|_ redux
+    |_ actions.js
+    |_ actionTypes.js
+    |_ reducers.js
+    |_ store.js
+</code></pre>
+<h3 id="&#x4E00;&#x3001;store">&#x4E00;&#x3001;Store</h3>
+<blockquote>
+<p>Store &#x5C31;&#x662F;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x770B;&#x6210;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x3002;<strong>&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; Store</strong>&#x3002;</p>
+<p>Redux &#x63D0;&#x4F9B;<code>createStore</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x751F;&#x6210; Store&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">import {createStore} from &apos;redux&apos;;
+import reducers from &apos;./reducers.js&apos;;
+
+const store = createStore(reducers);
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;createStore&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;(reducer)&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x65B0;&#x751F;&#x6210;&#x7684; Store &#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<h4 id="11-store&#x7684;&#x4F5C;&#x7528;">1.1 store&#x7684;&#x4F5C;&#x7528;</h4>
+<ul>
+<li>&#x7EF4;&#x6301;&#x5E94;&#x7528;&#x7684;state&#xFF1B;</li>
+<li>&#x63D0;&#x4F9B;<code>getState&#xFF08;&#xFF09;</code>&#x65B9;&#x6CD5;&#x83B7;&#x53D6;state&#xFF1B;</li>
+<li>&#x63D0;&#x4F9B;<code>dispatch&#xFF08;action&#xFF09;</code>&#x65B9;&#x6CD5;&#x66F4;&#x65B0;state&#xFF1B;</li>
+<li>&#x63D0;&#x4F9B;<code>subscribe&#xFF08;listener&#xFF09;</code>&#x65B9;&#x6CD5;&#x6CE8;&#x518C;&#x76D1;&#x542C;&#x5668;</li>
+<li>&#x901A;&#x8FC7;<code>subscribe&#xFF08;listener&#xFF09;</code>&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x6CE8;&#x9500;&#x662F;&#x76D1;&#x542C;&#x5668;&#xFF1B;</li>
+</ul>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;<br>&#x518D;&#x6B21;&#x5F3A;&#x8C03;&#x4E00;&#x4E0B;<strong>Redux &#x5E94;&#x7528;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684; store</strong>&#x3002;&#x5F53;&#x9700;&#x8981;&#x62C6;&#x5206;&#x6570;&#x636E;&#x5904;&#x7406;&#x903B;&#x8F91;&#x65F6;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; reducer &#x7EC4;&#x5408; &#x800C;&#x4E0D;&#x662F;&#x521B;&#x5EFA;&#x591A;&#x4E2A; store&#x3002;</p>
+</blockquote>
+<h4 id="12&#x3001;state">1.2&#x3001;state</h4>
+<blockquote>
+<p><code>Store</code>&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x60F3;&#x5F97;&#x5230;&#x67D0;&#x4E2A;&#x65F6;&#x70B9;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5C31;&#x8981;&#x5BF9; Store &#x751F;&#x6210;&#x5FEB;&#x7167;&#x3002;&#x8FD9;&#x79CD;&#x65F6;&#x70B9;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5408;&#xFF0C;&#x5C31;&#x53EB;&#x505A; State&#x3002;<br>&#x5F53;&#x524D;&#x65F6;&#x523B;&#x7684; State&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>store.getState()</code>&#x62FF;&#x5230;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">import { createStore } from &apos;redux&apos;;
+const store = createStore(fn);
+
+const state = store.getState();
+</code></pre>
+<h4 id="13-action">1.3 Action</h4>
+<blockquote>
+<p>State &#x7684;&#x53D8;&#x5316;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4; View &#x7684;&#x53D8;&#x5316;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7528;&#x6237;&#x63A5;&#x89E6;&#x4E0D;&#x5230; State&#xFF0C;&#x53EA;&#x80FD;&#x63A5;&#x89E6;&#x5230; View&#x3002;&#x6240;&#x4EE5;&#xFF0C;State &#x7684;&#x53D8;&#x5316;&#x5FC5;&#x987B;&#x662F; View &#x5BFC;&#x81F4;&#x7684;&#x3002;Action &#x5C31;&#x662F; View &#x53D1;&#x51FA;&#x7684;&#x901A;&#x77E5;&#xFF0C;&#x8868;&#x793A; State &#x5E94;&#x8BE5;&#x8981;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x4E86;&#x3002;</p>
+</blockquote>
+<ul>
+<li>Action &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x5176;&#x4E2D;&#x7684;<code>type</code>&#x5C5E;&#x6027;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x8868;&#x793A; Action &#x7684;&#x540D;&#x79F0;&#x3002;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x8BBE;&#x7F6E;&#x3002;</li>
+</ul>
+<pre><code class="lang-text">const action = {
+  type: &apos;ADD_TODO&apos;,
+  payload: &apos;Learn Redux&apos;
+};
+</code></pre>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Action &#x7684;&#x540D;&#x79F0;&#x662F;<em>ADD_TODO</em>&#xFF0C;&#x5B83;&#x643A;&#x5E26;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x5B57;&#x7B26;&#x4E32;Learn Redux&#x3002;<br>&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x7406;&#x89E3;&#xFF0C;Action &#x63CF;&#x8FF0;&#x5F53;&#x524D;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x6539;&#x53D8; State &#x7684;&#x552F;&#x4E00;&#x529E;&#x6CD5;&#xFF0C;&#x5C31;&#x662F;&#x4F7F;&#x7528; Action&#x3002;&#x5B83;&#x4F1A;&#x8FD0;&#x9001;&#x6570;&#x636E;&#x5230; Store&#x3002;</p>
+</blockquote>
+<p><strong>1.3.1 Action Creator</strong></p>
+<blockquote>
+<p>View &#x8981;&#x53D1;&#x9001;&#x591A;&#x5C11;&#x79CD;&#x6D88;&#x606F;&#xFF0C;&#x5C31;&#x4F1A;&#x6709;&#x591A;&#x5C11;&#x79CD; Action&#x3002;&#x5982;&#x679C;&#x90FD;&#x624B;&#x5199;&#xFF0C;&#x4F1A;&#x5F88;&#x9EBB;&#x70E6;&#x3002;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x751F;&#x6210; Action&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EB; Action Creator&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">const ADD_TODO = &apos;&#x6DFB;&#x52A0; TODO&apos;;
+
+function addTodo(text) {
+  return {
+    type: ADD_TODO,
+    text
+  }
+}
+
+const action = addTodo(&apos;Learn Redux&apos;);
+</code></pre>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;addTodo&#x51FD;&#x6570;&#x5C31;&#x662F;&#x4E00;&#x4E2A; Action Creator&#x3002;</p>
+</blockquote>
+<h4 id="14-storedispatch">1.4 store.dispatch()</h4>
+<blockquote>
+<p><code>store.dispatch()</code>&#x662F;View&#x53D1;&#x51FA;Action&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">import { createStore } from &apos;redux&apos;;
+import {addTodo} from &apos;./actionCreator&apos;;
+import reducers from &apos;./reducers.js&apos;;
+
+const store = createStore(reducers);
+const action  = addTodo(&apos;Learn Redux&apos;)
+store.dispatch(action);
+</code></pre>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;store.dispatch&#x63A5;&#x53D7;&#x4E00;&#x4E2A; Action &#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x5B83;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002;<br>&#x7ED3;&#x5408; Action Creator&#xFF0C;&#x751F;&#x6210;action&#x3002;</p>
+</blockquote>
+<h4 id="15-storesubscribe">1.5 store.subscribe()</h4>
+<blockquote>
+<p>Store &#x5141;&#x8BB8;&#x4F7F;&#x7528;<code>store.subscribe</code>&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x76D1;&#x542C;&#x51FD;&#x6570;&#xFF0C;&#x4E00;&#x65E6; State &#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5C31;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">import {createStore} from &apos;redux&apos;;
+const store = createStore(reducer);
+
+store.subscribe(listener);
+</code></pre>
+<ul>
+<li>&#x663E;&#x7136;&#xFF0C;&#x53EA;&#x8981;&#x628A; View &#x7684;&#x66F4;&#x65B0;&#x51FD;&#x6570;&#xFF08;&#x5BF9;&#x4E8E; React &#x9879;&#x76EE;&#xFF0C;&#x5C31;&#x662F;&#x7EC4;&#x4EF6;&#x7684;<code>render</code>&#x65B9;&#x6CD5;&#x6216;<code>setState</code>&#x65B9;&#x6CD5;&#xFF09;&#x653E;&#x5165;listen&#xFF0C;&#x5C31;&#x4F1A;&#x5B9E;&#x73B0; View &#x7684;&#x81EA;&#x52A8;&#x6E32;&#x67D3;&#x3002;</li>
+</ul>
+<blockquote>
+<p><code>store.subscribe</code>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x9664;&#x76D1;&#x542C;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">let unsubscribe = store.subscribe(() =&gt;
+  console.log(store.getState())
+);
+
+unsubscribe(); //&#x89E3;&#x9664;&#x76D1;&#x542C;
+</code></pre>
+<h3 id="&#x4E8C;&#x3001;reducer">&#x4E8C;&#x3001;Reducer</h3>
+<blockquote>
+<p>Store &#x6536;&#x5230; Action &#x4EE5;&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; State&#xFF0C;&#x8FD9;&#x6837; View &#x624D;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;&#x8FD9;&#x79CD; State &#x7684;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x5C31;&#x53EB;&#x505A; Reducer&#x3002;(&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x5904;&#x7406;&#x51FD;&#x6570;)<br>Reducer &#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x63A5;&#x53D7; Action &#x548C;&#x5F53;&#x524D; State &#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684; State&#x3002;<br>&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A; State &#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x9645;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text"># &#x521B;&#x5EFA;reducer
+const reducer = (state = 0, action) =&gt; {
+  switch (action.type) {
+    case &apos;ADD&apos;:
+      return state + action.payload;
+    default: 
+      return state;
+  }
+};
+
+# &#x751F;&#x6210;store
+import {createStore} from &apos;redux&apos;;
+const store = createStore(reducer);
+
+# &#x89E6;&#x53D1;reducer
+store.dispatch({
+    type:&apos;ADD&apos;,
+    payload:2,
+})
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;createStore&#x63A5;&#x53D7; Reducer &#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Store&#x3002;&#x4EE5;&#x540E;&#x6BCF;&#x5F53;store.dispatch&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Action&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528; Reducer&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684; State&#x3002;</li>
+</ul>
+<h4 id="21-&#x7EAF;&#x51FD;&#x6570;">2.1 &#x7EAF;&#x51FD;&#x6570;</h4>
+<blockquote>
+<p>Reducer &#x51FD;&#x6570;&#x6700;&#x91CD;&#x8981;&#x7684;&#x7279;&#x5F81;&#x662F;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7EAF;&#x51FD;&#x6570;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x8981;&#x662F;&#x540C;&#x6837;&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x5FC5;&#x5B9A;&#x5F97;&#x5230;&#x540C;&#x6837;&#x7684;&#x8F93;&#x51FA;&#x3002;<br>&#x7EAF;&#x51FD;&#x6570;&#x662F;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5FC5;&#x987B;&#x9075;&#x5B88;&#x4EE5;&#x4E0B;&#x4E00;&#x4E9B;&#x7EA6;&#x675F;&#x3002;</p>
+</blockquote>
+<ol>
+<li>&#x4E0D;&#x5F97;&#x5FC5;&#x5B9A;&#x53C2;&#x6570;</li>
+<li>&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;I/O&#x7684;API</li>
+<li><p>&#x4E0D;&#x80FD;&#x8C03;&#x7528;Date.now()&#x6216;&#x8005;Math.random()&#x7B49;&#x4E0D;&#x7EAF;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x4F1A;&#x5F97;&#x5230;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li><p>&#x7531;&#x4E8E; Reducer &#x662F;&#x7EAF;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x540C;&#x6837;&#x7684;State&#xFF0C;&#x5FC5;&#x5B9A;&#x5F97;&#x5230;&#x540C;&#x6837;&#x7684; View&#x3002;&#x4F46;&#x4E5F;&#x6B63;&#x56E0;&#x4E3A;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;Reducer &#x51FD;&#x6570;&#x91CC;&#x9762;&#x4E0D;&#x80FD;&#x6539;&#x53D8; State&#xFF0C;&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x5199;&#x6CD5;&#x3002;</p>
+</li>
+</ol>
+<pre><code class="lang-text">// State &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+function reducer(state, action) {
+  return Object.assign({}, state, { thingToChange });
+  // &#x6216;&#x8005;
+  return { ...state, ...newState };
+}
+
+// State &#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+function reducer(state, action) {
+  return [...state, newItem];
+}
+</code></pre>
+<h4 id="22-reducer&#x7684;&#x62C6;&#x5206;">2.2 Reducer&#x7684;&#x62C6;&#x5206;</h4>
+<blockquote>
+<p>Reducer &#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x751F;&#x6210; State&#x3002;&#x7531;&#x4E8E;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x53EA;&#x6709;&#x4E00;&#x4E2A; State &#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x5BF9;&#x4E8E;&#x5927;&#x578B;&#x5E94;&#x7528;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A; State &#x5FC5;&#x7136;&#x5341;&#x5206;&#x5E9E;&#x5927;&#xFF0C;&#x5BFC;&#x81F4; Reducer &#x51FD;&#x6570;&#x4E5F;&#x5341;&#x5206;&#x5E9E;&#x5927;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-text">const chatReducer = (state = defaultState, action = {}) =&gt; {
+  const { type, payload } = action;
+  switch (type) {
+    case ADD_CHAT:
+      return Object.assign({}, state, {
+        chatLog: state.chatLog.concat(payload)
+      });
+    case CHANGE_STATUS:
+      return Object.assign({}, state, {
+        statusMessage: payload
+      });
+    case CHANGE_USERNAME:
+      return Object.assign({}, state, {
+        userName: payload
+      });
+    default: return state;
+  }
+};
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E09;&#x79CD; Action &#x5206;&#x522B;&#x6539;&#x53D8; State &#x7684;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+<pre><code class="lang-text">ADD_CHAT&#xFF1A;chatLog&#x5C5E;&#x6027;
+CHANGE_STATUS&#xFF1A;statusMessage&#x5C5E;&#x6027;
+CHANGE_USERNAME&#xFF1A;userName&#x5C5E;&#x6027;
+</code></pre>
+<ul>
+<li>&#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x8054;&#x7CFB;&#xFF0C;&#x8FD9;&#x63D0;&#x793A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A; Reducer &#x51FD;&#x6570;&#x62C6;&#x5206;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x8D1F;&#x8D23;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x5C5E;&#x6027;&#xFF0C;&#x6700;&#x7EC8;&#x628A;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684; Reducer &#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<pre><code class="lang-text">const chatReducer = (state = defaultState, action = {}) =&gt; {
+  return {
+    chatLog: chatLog(state.chatLog, action),
+    statusMessage: statusMessage(state.statusMessage, action),
+    userName: userName(state.userName, action)
+  }
+};
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Reducer &#x51FD;&#x6570;&#x88AB;&#x62C6;&#x6210;&#x4E86;&#x4E09;&#x4E2A;&#x5C0F;&#x51FD;&#x6570;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x8D1F;&#x8D23;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x5C5E;&#x6027;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x8FD9;&#x79CD;&#x62C6;&#x5206;&#x4E0E; React &#x5E94;&#x7528;&#x7684;&#x7ED3;&#x6784;&#x76F8;&#x543B;&#x5408;&#xFF1A;&#x4E00;&#x4E2A; React &#x6839;&#x7EC4;&#x4EF6;&#x7531;&#x5F88;&#x591A;&#x5B50;&#x7EC4;&#x4EF6;&#x6784;&#x6210;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B50;&#x7EC4;&#x4EF6;&#x4E0E;&#x5B50; Reducer &#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5BF9;&#x5E94;&#x3002;</p>
+</blockquote>
+<p><strong>combineReducers</strong></p>
+<ul>
+<li>Redux &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;<code>combineReducers</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E; Reducer &#x7684;&#x62C6;&#x5206;&#x3002;&#x4F60;&#x53EA;&#x8981;&#x5B9A;&#x4E49;&#x5404;&#x4E2A;&#x5B50; Reducer &#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684; Reducer&#x3002;</li>
+</ul>
+<pre><code class="lang-text">import { combineReducers } from &apos;redux&apos;;
+
+const chatReducer = combineReducers({
+  chatLog,
+  statusMessage,
+  userName
+})
+
+export default todoApp;
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x901A;&#x8FC7;combineReducers&#x65B9;&#x6CD5;&#x5C06;&#x4E09;&#x4E2A;&#x5B50; Reducer &#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x6709;&#x4E00;&#x4E2A;&#x524D;&#x63D0;&#xFF0C;&#x5C31;&#x662F; <em>State &#x7684;&#x5C5E;&#x6027;&#x540D;&#x5FC5;&#x987B;&#x4E0E;&#x5B50; Reducer &#x540C;&#x540D;</em>&#x3002;&#x5982;&#x679C;&#x4E0D;&#x540C;&#x540D;&#xFF0C;&#x5C31;&#x8981;&#x91C7;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5199;&#x6CD5;&#x3002;</li>
+</ul>
+<pre><code class="lang-text">const reducer = combineReducers({
+  a: doSomethingWithA,
+  b: processB,
+  c: c
+})
+</code></pre>
+<ul>
+<li>&#x603B;&#x4E4B;&#xFF0C;combineReducers()&#x505A;&#x7684;&#x5C31;&#x662F;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6574;&#x4F53;&#x7684; Reducer &#x51FD;&#x6570;&#x3002;&#x8BE5;&#x51FD;&#x6570;&#x6839;&#x636E; State &#x7684; key &#x53BB;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5B50; Reducer&#xFF0C;&#x5E76;&#x5C06;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684; State &#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<h4 id="23-reducer&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;">2.3 Reducer&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</h4>
+<ol>
+<li>&#x7528;&#x6237;&#x53D1;&#x51FA;Action</li>
+<li>store&#x81EA;&#x52A8;&#x8C03;&#x7528;Reducer&#xFF0C;&#x5E76;&#x4F20;&#x5165;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x5F53;&#x524D;State&#x548C;&#x6536;&#x5230;&#x7684;Action&#x3002;</li>
+<li>Reducer&#x8FD4;&#x56DE;&#x65B0;&#x7684;State</li>
+<li>Store&#x901A;&#x8FC7;<code>store.subscribe(listener)</code>&#x76D1;&#x542C;&#x5230;State&#x7684;&#x53D8;&#x5316;</li>
+<li>listener&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>store.getState()</code>&#x5F97;&#x5230;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;&#x5728;listener&#x5185;&#x90E8;&#x89E6;&#x53D1;&#x91CD;&#x65B0;&#x6E32;&#x67D3;View</li>
+</ol>
+<pre><code class="lang-text">function listerner() {
+  let newState = store.getState();
+  component.setState(newState);   
+}
+</code></pre>
+<h2 id="100-&#x8E29;&#x5751;&#x8BB0;&#x5F55;">10.0 &#x8E29;&#x5751;&#x8BB0;&#x5F55;</h2>
+<p><strong>1. &#x4F7F;&#x7528;react-redux &#x7684;Provider&#x7EC4;&#x4EF6;&#x4F20;&#x5165;store&#x65F6;&#xFF0C;&#x5728;&#x5B50;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;this.context&#x662F;&#x7A7A;&#x5BF9;&#x8C61;&#xFF1F;&#xFF1F;&#xFF1F;</strong></p>
+<ul>
+<li>&#x539F;&#x56E0;&#xFF1A;&#x5B50;&#x7EC4;&#x4EF6;&#x6CA1;&#x6709;&#x58F0;&#x660E; contextTypes</li>
+<li>&#x89E3;&#x51B3;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-text">class App extends React.Component{
+//&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x5FC5;&#x987B;&#x8981;&#x663E;&#x5F0F;&#x7684;&#x5199;&#x51FA;context&#x53C2;&#x6570;
+    constructor(props,context){
+        console.log(this.context);  
+    }
+    componentDidMount(){
+        console.log(this.context) //&#x8FD9;&#x91CC;&#x4E0D;&#x7528;&#x663E;&#x793A;&#x7684;&#x5199;context&#x53C2;&#x6570;
+    }
+}
+App.contextTypes = {store:PropTypes.object.isRrequired}
+</code></pre>
+<blockquote>
+<p>&#x603B;&#x7ED3;&#xFF1A;react&#x4E2D;&#xFF0C;<code>contex</code>t&#x9700;&#x8981;&#x58F0;&#x660E;<code>contextTypes</code>&#x624D;&#x80FD;&#x62FF;&#x5230;&#xFF0C;&#x53EA;&#x6709;&#x4E0A;&#x5C42;&#x7EC4;&#x4EF6;childContext&#x548C;context&#x7684;type &#x5339;&#x914D;&#x624D;&#x4F1A;&#x5BF9;&#x4E0B;&#x5C42;&#x7EC4;&#x4EF6;&#x53EF;&#x89C1;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 九、项目中的问题记录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"redux简介&使用","title":"十、redux简介&使用","level":"2.10","depth":1,"previous":{"title":"九、项目中的问题记录","level":"2.9","depth":1,"path":"react-jiao-cheng/jiu-xiang-mu-zhong-de-wen-ti-ji-lu.md","ref":"react-jiao-cheng/jiu-xiang-mu-zhong-de-wen-ti-ji-lu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-jiao-cheng/shi-redux-jian-jie-shi-yong.md","mtime":"2018-12-21T15:03:39.894Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-21T15:20:08.336Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
