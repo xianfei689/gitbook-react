@@ -2,7 +2,7 @@
 description: umi，乌米，可插拔的企业级 react 应用框架。约定式路由、插件化、开箱即用。
 ---
 
-# umiJS22
+# umiJS2233
 
 ### 特点：
 
