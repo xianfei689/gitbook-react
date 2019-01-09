@@ -6,7 +6,7 @@ description: 数据流
 
 ### 数据流向
 
-![](.gitbook/assets/image%20%282%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/2.2.png)
 
 分析：
 
@@ -16,7 +16,7 @@ description: 数据流
 
 ### Ｄｖａ框架演进分析：
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/3.0.png)
 
 按照 React 官方指导意见, 如果多个 Component 之间要发生交互, 那么状态\(即: 数据\)就维护在这些 Component 的最小公约父节点上, 也即是 `<App/>`
 
@@ -24,7 +24,7 @@ description: 数据流
 
 
 
-![](.gitbook/assets/image%20%285%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/3.1.png)
 
 与图一相比, 几个明显的改进点:
 
@@ -34,14 +34,14 @@ description: 数据流
 
 这样一来, 各个部分各司其职, **耦合度更低**, **复用度更高**, **扩展性更好**
 
-![](.gitbook/assets/image%20%281%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/3.2.png)
 
 上面说了, 可以使用 **Middleware** 拦截 **action**, 这样一来**异步的网络操作**也就很方便了, 做成一个 Middleware 就行了, 这里使用 **redux-saga** 这个类库, 举个栗子:
 
 1. 点击创建 Todo 的按钮, 发起一个 type == addTodo 的 action
 2. saga 拦截这个 action, 发起 http 请求, 如果请求成功, 则继续向 reducer 发一个 type == addTodoSucc 的 action, 提示创建成功, 反之则发送 type == addTodoFail 的 action 即可
 
-![](.gitbook/assets/image%20%288%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/3.3.png)
 
 有了前面的三步铺垫, Dva 的出现也就水到渠成了, 正如 Dva 官网所言, Dva 是基于 **React + Redux + Saga** 的最佳实践沉淀, 做了 3 件很重要的事情, 大大提升了编码体验:
 

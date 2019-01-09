@@ -6,30 +6,26 @@ description: umi，乌米，可插拔的企业级 react 应用框架。约定式
 
 ### 特点：
 
-![](.gitbook/assets/image%20%287%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/1.0.png)
 
-![](.gitbook/assets/image%20%2816%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/1.1.png)
 
 
 
-![](.gitbook/assets/image%20%2817%29.png)
 
-![](.gitbook/assets/image%20%284%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/1.2.png)
+
+
+![](http://zhouxianfei.gitee.io/imgstore/front/react/1.3.png)
 
 
 
 ## Use umi with dva <a id="use-umi-with-dva"></a>
 
-![](.gitbook/assets/image%20%2813%29.png)
+
+![](http://zhouxianfei.gitee.io/imgstore/front/react/1.4.png)
 
 
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
 
 

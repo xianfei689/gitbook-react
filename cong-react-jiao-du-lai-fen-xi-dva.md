@@ -53,7 +53,7 @@ _\*\*\*\*_
 
 ## **模型1：**
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/4.0.png)
 
 ### 核心概念 <a id="&#x6838;&#x5FC3;&#x6982;&#x5FF5;"></a>
 
@@ -71,7 +71,7 @@ View 就是 React 组件构成的 UI 层，从 State 取数据后，渲染成 HT
 
 ## 模型二：
 
-![](.gitbook/assets/image.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/4.1.png)
 
 ### dva 应用的最简结构（带 model\) <a id="dva-&#x5E94;&#x7528;&#x7684;&#x6700;&#x7B80;&#x7ED3;&#x6784;&#xFF08;&#x5E26;-model"></a>
 

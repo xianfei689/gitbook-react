@@ -6,15 +6,14 @@ description: '基于 redux 和 redux-saga 的数据流方案,内置了 react-rou
 
 ### 特点
 
-![](.gitbook/assets/image%20%283%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/2.0.png)
 
-![](.gitbook/assets/image%20%289%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/2.1.png)
 
 ### 数据流向
 
 
-
-![](.gitbook/assets/image%20%282%29.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/react/2.2.png)
 
 分析：
 
