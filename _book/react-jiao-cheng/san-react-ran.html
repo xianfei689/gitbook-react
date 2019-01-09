@@ -1,0 +1,469 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.三、React渲染 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="React渲染">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="si-zu-jian-components.html" />
+    
+    
+    <link rel="prev" href="er-jsx-jie-shao.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1.umiJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../dvajs.html">
+            
+                <a href="../dvajs.html">
+            
+                    
+                    2.DvaJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../dva-tu-jie.html">
+            
+                <a href="../dva-tu-jie.html">
+            
+                    
+                    3.Dva 图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../cong-react-jiao-du-lai-fen-xi-dva.html">
+            
+                <a href="../cong-react-jiao-du-lai-fen-xi-dva.html">
+            
+                    
+                    4.从react角度来分析Dva
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">react教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="yi-an-zhuang-yu-shi-yong.html">
+            
+                <a href="yi-an-zhuang-yu-shi-yong.html">
+            
+                    
+                    5.一、安装与使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="er-jsx-jie-shao.html">
+            
+                <a href="er-jsx-jie-shao.html">
+            
+                    
+                    6.二、JSX介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="san-react-ran.html">
+            
+                <a href="san-react-ran.html">
+            
+                    
+                    7.三、React渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="si-zu-jian-components.html">
+            
+                <a href="si-zu-jian-components.html">
+            
+                    
+                    8.四、组件Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="wu-props-shu-xing-he-state-zhuang-tai.html">
+            
+                <a href="wu-props-shu-xing-he-state-zhuang-tai.html">
+            
+                    
+                    9.五、Props（属性）和State（状态）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="liu-react-sheng-ming-zhou-qi.html">
+            
+                <a href="liu-react-sheng-ming-zhou-qi.html">
+            
+                    
+                    10.六、React生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="qi-react-zu-jian-ying-yong-chang-jing.html">
+            
+                <a href="qi-react-zu-jian-ying-yong-chang-jing.html">
+            
+                    
+                    11.七、React组件应用场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="ba-reactrouter-chu-shi.html">
+            
+                <a href="ba-reactrouter-chu-shi.html">
+            
+                    
+                    12.八、React-router初识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html">
+            
+                <a href="jiu-xiang-mu-zhong-de-wen-ti-ji-lu.html">
+            
+                    
+                    13.九、项目中的问题记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="shi-redux-jian-jie-shi-yong.html">
+            
+                <a href="shi-redux-jian-jie-shi-yong.html">
+            
+                    
+                    14.十、redux简介&使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.三、React渲染</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E09;&#x3001;react&#x6E32;&#x67D3;">&#x4E09;&#x3001;React&#x6E32;&#x67D3;</h1>
+<h3 id="&#x4E00;&#x3001;&#x5143;&#x7D20;&#x6E32;&#x67D3;">&#x4E00;&#x3001;&#x5143;&#x7D20;&#x6E32;&#x67D3;</h3>
+<blockquote>
+<p>&#x5143;&#x7D20;(Elements)&#x662F; React &#x5E94;&#x7528;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x6784;&#x5EFA;&#x90E8;&#x4EF6;&#xFF08;&#x6216;&#x8005;&#x8BF4;&#x6784;&#x5EFA;&#x5757;&#xFF0C;building blocks&#xFF09;&#x3002;<br>&#x4E0D;&#x540C;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x7684; DOM &#x5143;&#x7D20;&#xFF0C; React &#x5143;&#x7D20;&#x662F;&#x666E;&#x901A;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x521B;&#x5EFA;&#x3002;React DOM &#x4F1A;&#x8D1F;&#x8D23;&#x66F4;&#x65B0; DOM &#xFF0C;&#x4EE5;&#x5339;&#x914D;React&#x5143;&#x7D20;&#xFF08;DOM&#x5143;&#x7D20;&#x4E0E;React&#x5143;&#x7D20;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF09;&#x3002;</p>
+</blockquote>
+<h4 id="11-reactdomrender">1.1 ReactDOM.render()</h4>
+<blockquote>
+<p>ReactDOM.render &#x662F; React &#x7684;&#x6700;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5C06;&#x6A21;&#x677F;&#x8F6C;&#x4E3A; HTML &#x8BED;&#x8A00;&#xFF0C;&#x5E76;&#x63D2;&#x5165;&#x6307;&#x5B9A;&#x7684; DOM &#x8282;&#x70B9;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-text">import React from &apos;react&apos;
+import ReactDOM from &apos;react-dom&apos;;
+
+const Ele =&lt;h1&gt;Hello &lt;/h1&gt;
+// &#x6302;&#x8F7D;
+ReactDOM.render(Ele,document.getElementById(&apos;root&apos;))
+</code></pre>
+<h4 id="12-&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5230;dom">1.2 &#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5230;DOM</h4>
+<blockquote>
+<p>&#x8981;&#x6E32;&#x67D3;&#x4E00;&#x4E2A; React &#x5143;&#x7D20;&#x5230;&#x4E00;&#x4E2A; root DOM &#x8282;&#x70B9;&#xFF0C;&#x628A;&#x5B83;&#x4EEC;&#x4F20;&#x9012;&#x7ED9; ReactDOM.render() &#x65B9;&#x6CD5;</p>
+</blockquote>
+<pre><code class="lang-text">const element = &lt;h1&gt;Hello, world&lt;/h1&gt;;
+ReactDOM.render(
+  element,
+  document.getElementById(&apos;root&apos;)
+);
+</code></pre>
+<blockquote>
+<p>&#x6DFB;&#x52A0;&#x7EC4;&#x4EF6;&#x5C5E;&#x6027;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5C31;&#x662F; class &#x5C5E;&#x6027;&#x9700;&#x8981;&#x5199;&#x6210; className &#xFF0C;for &#x5C5E;&#x6027;&#x9700;&#x8981;&#x5199;&#x6210; htmlFor &#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A; class &#x548C; for &#x662F; JavaScript &#x7684;&#x4FDD;&#x7559;&#x5B57;&#x3002;</p>
+</blockquote>
+<h4 id="13-react&#x53EA;&#x66F4;&#x65B0;&#x5FC5;&#x9700;&#x66F4;&#x65B0;&#x7684;&#x90E8;&#x5206;">1.3 React&#x53EA;&#x66F4;&#x65B0;&#x5FC5;&#x9700;&#x66F4;&#x65B0;&#x7684;&#x90E8;&#x5206;</h4>
+<blockquote>
+<p>React DOM &#x4F1A;&#x5C06;&#x5143;&#x7D20;&#x53CA;&#x5176;&#x5B50;&#x5143;&#x7D20;&#x4E0E;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x9010;&#x4E00;&#x5BF9;&#x6BD4;, &#x5E76;&#x53EA;&#x5BF9;&#x6709;&#x5FC5;&#x8981;&#x66F4;&#x65B0;&#x7684; DOM &#x8FDB;&#x884C;&#x66F4;&#x65B0;, &#x4EE5;&#x8FBE;&#x5230; DOM &#x6240;&#x9700;&#x7684;&#x72B6;&#x6001;&#x3002;&#xFF08;&#x865A;&#x62DF;DOM&#x7684;&#x4F5C;&#x7528;&#xFF09;</p>
+</blockquote>
+<h3 id="&#x4E8C;&#x3001;&#x865A;&#x62DF;dom">&#x4E8C;&#x3001;&#x865A;&#x62DF;DOM</h3>
+<blockquote>
+<p>React&#x975E;&#x5E38;&#x5FEB;&#x901F;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x4ECE;&#x4E0D;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;DOM&#xFF0C;&#x800C;&#x662F;&#x5728;DOM&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5EFA;&#x7ACB;&#x4E86;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x5C42;&#xFF08;&#x865A;&#x62DF;DOM&#xFF09;&#xFF0C;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x548C;&#x72B6;&#x6001;&#x6240;&#x505A;&#x7684;&#x4EFB;&#x4F55;&#x6539;&#x52A8;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x4E14;&#x9AD8;&#x6548;&#x7684;&#x540C;&#x6B65;&#x5230;&#x865A;&#x62DF;DOM&#xFF0C;&#x6700;&#x540E;&#x518D;&#x6279;&#x91CF;&#x540C;&#x6B65;&#x5230;DOM&#x4E2D;&#x3002;</p>
+<p>&#x5728;React&#x4E2D;&#xFF0C;render&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x5F97;&#x5230;&#x7684;&#x5E76;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;DOM&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x4EC5;&#x4EC5;&#x662F;JavaScript&#x5BF9;&#x8C61;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A; <strong>&#x865A;&#x62DF;DOM</strong>&#x3002;<br>&#x865A;&#x62DF;DOM&#x5177;&#x6709;&#x6279;&#x5904;&#x7406;&#x548C;&#x9AD8;&#x6548;&#x7684; <strong>Diff&#x7B97;&#x6CD5;</strong>&#xFF0C;&#x53EF;&#x4EE5;&#x65E0;&#x9700;&#x62C5;&#x5FC3;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x800C;&#x968F;&#x65F6;&#x201C;&#x5237;&#x65B0;&#x201D;&#x6574;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x56E0;&#x4E3A;&#x865A;&#x62DF;DOM&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x53EA;&#x5BF9;&#x754C;&#x9762;&#x4E0A;&#x771F;&#x6B63;&#x53D8;&#x5316;&#x7684;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x7684;DOM&#x64CD;&#x4F5C;&#x3002;</p>
+</blockquote>
+<h4 id="21-&#x4F20;&#x7EDF;app&#x4E0E;react-app&#x7684;&#x5BF9;&#x6BD4;">2.1 &#x4F20;&#x7EDF;App&#x4E0E;React App&#x7684;&#x5BF9;&#x6BD4;</h4>
+<ul>
+<li>&#x4F20;&#x7EDF;App innerHTML : render html&#x5B57;&#x7B26;&#x4E32; + &#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x6240;&#x6709;DOM&#x5143;&#x7D20;</li>
+<li>ReactApp &#x865A;&#x62DF;DOM&#xFF1A;render &#x865A;&#x62DF;DOM + diff + &#x66F4;&#x65B0;&#x5FC5;&#x8981;&#x7684;DOM&#x5143;&#x7D20;</li>
+</ul>
+<h4 id="22-&#x865A;&#x62DF;dom&#x7684;&#x539F;&#x7406;">2.2 &#x865A;&#x62DF;DOM&#x7684;&#x539F;&#x7406;</h4>
+<blockquote>
+<p>React&#x4F1A;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x865A;&#x62DF;DOM&#x6811;&#xFF0C;&#x5BF9;&#x8FD9;&#x4E2A;&#x6811;&#x8FDB;&#x884C;&#x8BFB;&#x6216;&#x5199;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x5BF9;&#x865A;&#x62DF;DOM&#x8FDB;&#x884C;&#x3002;&#x5F53;&#x6570;&#x636E;&#x53D8;&#x5316;&#x65F6;&#xFF0C;React&#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x865A;&#x62DF;DOM&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x65B0;&#x7684;&#x865A;&#x62DF;DOM&#x548C;&#x65E7;&#x7684;&#x865A;&#x62DF;DOM&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#xFF0C;&#x627E;&#x5230;&#x53D8;&#x66F4;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5F97;&#x51FA;&#x4E00;&#x4E2A;diff&#xFF0C;&#x7136;&#x540E;&#x5C06;diff&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x91CC;&#xFF0C;&#x6700;&#x7EC8;&#x6279;&#x91CF;&#x66F4;&#x65B0;&#x8FD9;&#x4E9B;diff&#x5230;DOM&#x4E2D;&#x3002;<br><img src="http://p3cnmw3ss.bkt.clouddn.com/01" alt="&#x865A;&#x62DF;DOM&#x539F;&#x7406;"></p>
+</blockquote>
+<h4 id="23-&#x865A;&#x62DF;dom&#x7684;&#x4F18;&#x7F3A;&#x70B9;">2.3 &#x865A;&#x62DF;DOM&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h4>
+<blockquote>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li>&#x6700;&#x7EC8;&#x8868;&#x73B0;&#x5728;DOM&#x4E0A;&#x7684;&#x4FEE;&#x6539;&#x53EA;&#x662F;&#x53D8;&#x66F4;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x975E;&#x5E38;&#x9AD8;&#x6548;&#x7684;&#x6E32;&#x67D3;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+</blockquote>
+<ul>
+<li>&#x9996;&#x6B21;&#x6E32;&#x67D3;&#x5927;&#x91CF;DOM&#x65F6;&#xFF0C;&#x7531;&#x4E8E;&#x591A;&#x4E86;&#x4E00;&#x5C42;&#x865A;&#x62DF;DOM&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x4F1A;&#x6BD4;innerHTML&#x63D2;&#x5165;&#x6162;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="er-jsx-jie-shao.html" class="navigation navigation-prev " aria-label="Previous page: 6.二、JSX介绍">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="si-zu-jian-components.html" class="navigation navigation-next " aria-label="Next page: 8.四、组件Components">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"React渲染","title":"7.三、React渲染","level":"2.3","depth":1,"next":{"title":"8.四、组件Components","level":"2.4","depth":1,"path":"react-jiao-cheng/si-zu-jian-components.md","ref":"react-jiao-cheng/si-zu-jian-components.md","articles":[]},"previous":{"title":"6.二、JSX介绍","level":"2.2","depth":1,"path":"react-jiao-cheng/er-jsx-jie-shao.md","ref":"react-jiao-cheng/er-jsx-jie-shao.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-jiao-cheng/san-react-ran.md","mtime":"2019-01-09T13:48:34.415Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-09T13:56:46.455Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
