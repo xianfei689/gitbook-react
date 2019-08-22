@@ -2,14 +2,14 @@
 description: redux简介&使用
 ---
 
-# 十、redux简介&使用
+# 十、redux简介&使用33
 
 ### 一、Redux简介
 
 > React 只是 DOM 的一个抽象层，并不是 Web 应用的完整解决方案。有两个方面，它没涉及：_代码结构、组件间的通信_。 为了解决这个问题，2014年 Facebook 提出了 Flux 架构的概念，引发了很多的实现。2015年，Redux 出现，将 Flux 与函数式编程结合一起，很短时间内就成为了最热门的前端架构。
-
+>
 > Redux：简言之，一个状态机。就像vue的vuex一样，负责项目的单独的state状态管理，通过redux可以实现全局的状态管理，所有的state都在一个store对象中保存。当然，redux并不是react的标配，如果项目简单，交互并不负杂，组件间通信不频繁，不用websocket等就可以不用redux。
-
+>
 > Redux的设计思想：
 
 1. Web应用是一个状态机，视图与状态是一一对应的。
@@ -18,7 +18,7 @@ description: redux简介&使用
 ### 二、基本使用
 
 > redux使用最频繁的三个方法： `store.getState()`,`store.dispatch({type:'xx'})`,`store.subscribe(fn)`
-
+>
 > 使用redux的基本步骤：
 
 1. **引入**：
@@ -52,8 +52,8 @@ import store from 'reducer/store.js';
 
 # 伪代码
 render(){
-	return(<div>
-    	state:{store.getState()}
+    return(<div>
+        state:{store.getState()}
         <button onClick={()=>store.dispatch({type:'INCREMENT'})}>加一</button>
         <button onClick={()=>store.dispatch({type:'DECREMENT'})}>减一</button>
     </div>)
@@ -91,8 +91,6 @@ store.dispatch({type:'INCREMENT'})
 * `Reducer`：改变state的处理函数
 * `Store`：存储State的对象，包含操作state的方法
 
-
-
 ## 10.1 基本概念和API
 
 ### 总结
@@ -101,7 +99,7 @@ store.dispatch({type:'INCREMENT'})
 
 ```text
 |_ redux
-	|_ actions.js
+    |_ actions.js
     |_ actionTypes.js
     |_ reducers.js
     |_ store.js
@@ -110,7 +108,7 @@ store.dispatch({type:'INCREMENT'})
 ### 一、Store
 
 > Store 就是保存数据的地方，你可以把它看成一个容器。**整个应用只能有一个 Store**。
-
+>
 > Redux 提供`createStore`这个函数，用来生成 Store。
 
 ```text
@@ -192,7 +190,6 @@ import reducers from './reducers.js';
 const store = createStore(reducers);
 const action  = addTodo('Learn Redux')
 store.dispatch(action);
-
 ```
 
 > 上面代码中，store.dispatch接受一个 Action 对象作为参数，将它发送出去。  
@@ -244,7 +241,7 @@ const store = createStore(reducer);
 
 # 触发reducer
 store.dispatch({
-	type:'ADD',
+    type:'ADD',
     payload:2,
 })
 ```
@@ -260,7 +257,7 @@ store.dispatch({
 2. 不能调用系统I/O的API
 3. 不能调用Date.now\(\)或者Math.random\(\)等不纯的方法，因为每次会得到不一样的结果。
 
-* 由于 Reducer 是纯函数，就可以保证同样的State，必定得到同样的 View。但也正因为这一点，Reducer 函数里面不能改变 State，必须返回一个全新的对象，请参考下面的写法。
+4. 由于 Reducer 是纯函数，就可以保证同样的State，必定得到同样的 View。但也正因为这一点，Reducer 函数里面不能改变 State，必须返回一个全新的对象，请参考下面的写法。
 
 ```text
 // State 是一个对象
@@ -352,7 +349,6 @@ const reducer = combineReducers({
   b: processB,
   c: c
 })
-
 ```
 
 * 总之，combineReducers\(\)做的就是产生一个整体的 Reducer 函数。该函数根据 State 的 key 去执行相应的子 Reducer，并将返回结果合并成一个大的 State 对象。
@@ -372,8 +368,6 @@ function listerner() {
 }
 ```
 
-
-
 ## 10.0 踩坑记录
 
 **1. 使用react-redux 的Provider组件传入store时，在子组件中，this.context是空对象？？？**
@@ -384,15 +378,17 @@ function listerner() {
 ```text
 class App extends React.Component{
 //注意这里必须要显式的写出context参数
-	constructor(props,context){
-    	console.log(this.context);  
+    constructor(props,context){
+        console.log(this.context);  
     }
     componentDidMount(){
-    	console.log(this.context) //这里不用显示的写context参数
+        console.log(this.context) //这里不用显示的写context参数
     }
 }
 App.contextTypes = {store:PropTypes.object.isRrequired}
 ```
 
 > 总结：react中，`contex`t需要声明`contextTypes`才能拿到，只有上层组件childContext和context的type 匹配才会对下层组件可见。
+
+
 
